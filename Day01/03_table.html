@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>테이블 연습</title>
+</head>
+<body>
+
+	<table border="1">
+		<tr>
+			<th>no</th>
+			<th>name</th>
+			<th>message</th>
+		</tr>
+
+		<tr>
+			<td>1</td>
+			<td>sam</td>
+			<td>Hello</td>
+		</tr>
+
+		<tr>
+			<td>2</td>
+			<td>robin</td>
+			<td>Nice to meet you</td>
+			<!-- 각 행(row)의 데이터(셀)개수가 다를 수 있음 -->
+			<td>20180530</td>
+		</tr>
+	</table>
+
+	<!-- 셀병합 -->
+	<table border="1">
+		<!-- 표제목 -->
+		<caption>
+			테이블 제목
+		</caption>
+		<!--caption의 작성 위치 상관없이 무조건 표의 상단에 배치. css를 배우면 위치조정 가능함. -->
+		<tr>
+			<!-- span은 한 줄만 있으면 적용이 안됨. -->
+			<td rowspan="2">111</td>
+			<td colspan="3">222</td>
+			<td>333</td>
+		</tr>
+		<tr>
+			<td>444</td>
+			<td>555</td>
+			<td>666</td>
+		</tr>
+	</table>
+
+	<hr>
+
+	<!-- 테이블 <td></td>안에 다른 요소 넣기 -->
+	<table border="1" width="100%">
+		<tr>
+			<td width="30%">
+				<a href="http://www.naver.com">Naver</a>
+			</td>
+			<td>
+				<ul>
+					<li>aaa</li>
+					<li>bbb</li>
+					<li>ccc</li>
+				</ul>
+			</td>
+		</tr>
+
+		<tr>
+			<td>
+				<p>laksjf;laksjf;laksjglakjg;alkjalksdjf;alskdjf;alskdjf;alskjf;alksdjf;alksdjf;alksdf;alksdfjlkj;</p>
+			</td>
+			<td><img src="board.jpg"></td>
+		</tr>
+	</table>
+	<br>
+	<hr>
+	<br>
+	<table border="1">
+		<tr>
+			<th colspan="5">평생교육원 강좌 소개</th>
+		</tr>
+		<tr>
+			<th>강좌 이름</th>
+			<th>강의자</th>
+			<th>소개</th>
+			<th>강좌코드</th>
+			<th>실습비</th>
+		</tr>
+		<tr>
+			<td>뎃생과 유화</td>
+			<td>김철수</td>
+			<td>모든 미술영역의 뼈대를 이루는 뎃생의 기본실력을 체계적으로 다루며, 유화에서는</td>
+			<td>H27</td>
+			<td>100,000원</td>
+		</tr>
+		<tr>
+			<td>바이올린</td>
+			<td>홍길동</td>
+			<td>모든 미술영역의 뼈대를 이루는 뎃생의 기본실력을 체계적으로 다루며, 유화에서는......</td>
+			<td>H28</td>
+			<td>200,000원</td>
+		</tr>
+		<tr>
+			<td>상악아카데미</td>
+			<td>김호성</td>
+			<td>모든 미술영역의 뼈대를 이루는 뎃생의 기본실력을 체계적으로 다루며, 유화에서는......</td>
+			<td>H30</td>
+			<td>300,000원</td>
+		</tr>
+	</table>
+
+</body>
+</html>
